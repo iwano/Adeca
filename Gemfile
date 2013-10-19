@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
+
 gem 'coffee-rails', '~> 4.0.0'
 gem "cocoon"
 gem 'formtastic', github: 'justinfrench/formtastic'
@@ -10,7 +12,7 @@ gem 'jquery-rails'
 gem 'pg'
 gem 'rails', '4.0.0'
 gem 'rails_admin'
-gem 'rails-pry'
+gem 'pry-rails'
 gem 'sass-rails', '~> 4.0.0'
 gem 'textacular', github: 'textacular/textacular'
 gem 'uglifier', '>= 1.3.0'
