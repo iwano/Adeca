@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  property_type: MyString
+  city: MyString
+  address: MyString
+  neighborhood: MyString
+  number_of_rooms: 1
+  cost_price: 9.99
+  sale_price: 9.99
+  owner: MyString
+  client: MyString
+
+two:
+  property_type: MyString
+  city: MyString
+  address: MyString
+  neighborhood: MyString
+  number_of_rooms: 1
+  cost_price: 9.99
+  sale_price: 9.99
+  owner: MyString
+  client: MyString

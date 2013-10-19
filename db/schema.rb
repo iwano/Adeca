@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131019011525) do
+ActiveRecord::Schema.define(version: 20131019171828) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -33,6 +33,20 @@ ActiveRecord::Schema.define(version: 20131019011525) do
 
   add_index "admins", ["email"], name: "index_admins_on_email", unique: true, using: :btree
   add_index "admins", ["reset_password_token"], name: "index_admins_on_reset_password_token", unique: true, using: :btree
+
+  create_table "properties", force: true do |t|
+    t.string   "property_type"
+    t.string   "city"
+    t.string   "address"
+    t.string   "neighborhood"
+    t.integer  "number_of_rooms"
+    t.decimal  "cost_price"
+    t.decimal  "sale_price"
+    t.string   "owner"
+    t.string   "client"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "rails_admin_histories", force: true do |t|
     t.text     "message"
