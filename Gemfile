@@ -20,6 +20,3 @@ gem 'uglifier', '>= 1.3.0'
 group :doc do
   gem 'sdoc', require: false
 end
-
-
-gem "devise"
