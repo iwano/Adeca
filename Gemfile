@@ -4,6 +4,7 @@ ruby '2.0.0'
 
 gem 'coffee-rails', '~> 4.0.0'
 gem "cocoon"
+gem "devise"
 gem 'formtastic', github: 'justinfrench/formtastic'
 gem 'formtastic-bootstrap'
 gem 'haml'
@@ -22,4 +23,3 @@ group :doc do
 end
 
 
-gem "devise"
