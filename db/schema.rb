@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(version: 20131020160550) do
   create_table "images", force: true do |t|
     t.string  "photo"
     t.boolean "photo_processing"
+    t.integer "property_id"
   end
 
   create_table "properties", force: true do |t|
