@@ -8,14 +8,10 @@
         %span.icon-bar
       %a#logo.navbar-brand{href: "../"} Adeca
     %nav.collapse.navbar-collapse.bs-navbar-collapse{role: "navigation"}
-      %ul.nav.navbar-nav
-      / %li
-      /   %a{href: "../getting-started"} Getting started
-      / %li
-      /   %a{href: "../css"} CSS
-      / %li.active
-      /   %a{href: "../components"} Components
-      / %li
-      /   %a{href: "../javascript"} JavaScript
-      / %li
-      /   %a{href: "../customize"} Customize
+      %ul#main-nav.nav.navbar-nav
+        %li
+          %a{href: "/contact_us"}
+            = t('contact_us')
+        %li
+          %a{href: "about_us"}
+            = t('services')

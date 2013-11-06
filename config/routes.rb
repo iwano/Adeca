@@ -4,6 +4,8 @@ Adeca::Application.routes.draw do
 
   devise_for :admins
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
-  root to: 'static_pages#home'
+
+  get '/:static_page', to: 'static_pages#index', as: :static_page
+  root to: 'static_pages#index', static_page: 'home'
 
 end

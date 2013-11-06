@@ -1,5 +1,5 @@
 html, body, #layout, #layout .row:first-child,  #main{
-  height: 100%;
+  min-height: 100%;
 }
 
 body{
@@ -10,32 +10,6 @@ body{
   padding-top: 20px;
 }
 
-#search-sidebar{
-  min-height: 150px;
-}
-
-#main{
-  min-height: 200%;
-}
-
-.search-container{
-  background-color: #e7e7e7;
-  margin-left: -15px;
-  padding: 12px;
-  width: 290px;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-@media (min-width: 992px){
-  .search-container {
-    position: fixed;
-    width: 213px;
-  }
-}
-@media (min-width: 1200px){
-  .search-container {
-    width: 263px;
-  }
+.services-list{
+  margin: 40px 0;
 }
