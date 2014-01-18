@@ -1,5 +1,5 @@
 Adeca::Application.routes.draw do
-  resources :properties, path: 'propiedades'
+  resources :properties, only: [:index, :show], path: 'propiedades'
   resources :search, only: :index
 
   devise_for :admins

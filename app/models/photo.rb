@@ -1,6 +1,5 @@
-class Image < ActiveRecord::Base
-  mount_uploader :photo, ImageUploader
-  process_in_background :photo
+class Photo < ActiveRecord::Base
+  mount_uploader :photos, PhotoUploader
   belongs_to :property
 
   validate :file_size

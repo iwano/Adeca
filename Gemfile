@@ -3,10 +3,10 @@ source 'https://rubygems.org'
 ruby '2.0.0'
 
 gem 'carrierwave'
-gem 'carrierwave_backgrounder'
 gem 'coffee-rails', '~> 4.0.0'
 gem "cocoon"
 gem "devise"
+gem 'fog'
 gem 'formtastic', github: 'justinfrench/formtastic'
 gem 'formtastic-bootstrap'
 gem 'haml'
