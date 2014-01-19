@@ -1,0 +1,24 @@
+- if params[:keyword]
+  %h2= t('.search_results_for', keyword: params[:keyword], count: @properties.count)
+- else
+  %h1= t('.listing_properties')
+%table
+  %thead
+    %tr
+      %th= t('active_record.attributes.property.property_type')
+      %th= t('active_record.attributes.property.city')
+      %th= t('active_record.attributes.property.address')
+      %th= t('active_record.attributes.property.description')
+      %th= t('active_record.attributes.property.cost_price')
+      %th= t('active_record.attributes.property.sale_price')
+      %th
+  %tbody
+    - @properties.each do |property|
+      %tr
+        %td= property.property_type
+        %td= property.city
+        %td= property.address
+        %td= property.description
+        %td= property.cost_price
+        %td= property.sale_price
+        %td= link_to 'Show', property

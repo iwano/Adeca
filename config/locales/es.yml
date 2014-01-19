@@ -1,5 +1,16 @@
 es:
   about_us: Acerca de nosotros
+  active_record:
+    models:
+      property: Propiedad
+    attributes:
+      property:
+        property_type: Tipo de Propiedad
+        city: Ciudad
+        address: Dirección
+        cost_price: Costo
+        sale_price: Costo de venta
+        description: Descripción
   admin:
     home:
       name: Inicio
@@ -129,6 +140,10 @@ es:
         col_sep: "Separador de columnas"
         col_sep_help: "Deje en blanco para el de defecto ('%{value}')" # value is default_col_sep
   contact_us: Contáctanos
+  properties:
+    index:
+      listing_properties: Listado de Propiedades
+      search_results_for: '%{count} resultado(s) para "%{keyword}"'
   services: Servicios
   title: Adeca
   search:
