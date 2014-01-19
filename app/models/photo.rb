@@ -1,6 +1,6 @@
 class Photo < ActiveRecord::Base
-  mount_uploader :photos, PhotoUploader
-  belongs_to :property
+  mount_uploader :photo, PhotoUploader
+  belongs_to :property, :inverse_of => :photos
 
   validate :file_size
 
