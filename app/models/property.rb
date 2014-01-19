@@ -7,4 +7,8 @@ class Property < ActiveRecord::Base
       label 'Property photos'
     end
   end
+
+  def master_photo
+    photos.first.photo
+  end
 end

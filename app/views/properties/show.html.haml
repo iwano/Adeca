@@ -1,0 +1,26 @@
+%p#notice= notice
+%p
+  %strong Property type:
+  = @property.property_type
+%p
+  %strong City:
+  = @property.city
+%p
+  %strong Address:
+  = @property.address
+%p
+  %strong Description
+  = @property.description
+%p
+  %strong Cost price:
+  = @property.cost_price
+%p
+  %strong Sale price:
+  = @property.sale_price
+
+.property-photos
+  .cycle-slideshow{"data-cycle-pager" => "#pager1", "data-cycle-pager-template" => "<a href=# ><img src='' width=20 height=20></a>", "data-cycle-slides" => ">div", "data-cycle-timeout" => "0", "data-cycle-update-view" => "-1"}
+    - @property.photos.each do |photo|
+      %div
+        = image_tag photo.photo
+  #pager1.cycle-pager
