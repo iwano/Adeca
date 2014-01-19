@@ -1,29 +1,32 @@
-- if params[:keyword]
-  %h2= t('.search_results_for', keyword: params[:keyword], count: @properties.count)
-- else
-  %h1= t('.listing_properties')
-%ul.properties-list
-  - @properties.each do |property|
-    %li
-      = link_to image_tag(property.master_photo), property
-      %table.property-properties-table
-        %tbody
-          %tr
-            %th= t('active_record.attributes.property.property_type')
-            %td= property.property_type
-          %tr
-            %th= t('active_record.attributes.property.city')
-            %td= property.city
-          %tr
-            %th= t('active_record.attributes.property.address')
-            %td= property.address
-          %tr
-            %th= t('active_record.attributes.property.description')
-            %td= raw property.description
-          %tr
-            %th= t('active_record.attributes.property.cost_price')
-            %td= number_to_currency property.cost_price
-          %tr
-            %th= t('active_record.attributes.property.sale_price')
-            %td= number_to_currency property.sale_price
-      /= link_to 'Show', property
+.row
+  = render 'shared/search_side_bar'
+  #main.col-md-9
+    - if params[:keyword]
+      %h2= t('.search_results_for', keyword: params[:keyword], count: @properties.count)
+    - else
+      %h1= t('.listing_properties')
+    %ul.properties-list
+      - @properties.each do |property|
+        %li
+          = link_to image_tag(property.master_photo), property
+          %table.property-properties-table
+            %tbody
+              %tr
+                %th= t('active_record.attributes.property.property_type')
+                %td= property.property_type
+              %tr
+                %th= t('active_record.attributes.property.city')
+                %td= property.city
+              %tr
+                %th= t('active_record.attributes.property.address')
+                %td= property.address
+              %tr
+                %th= t('active_record.attributes.property.description')
+                %td= raw property.description
+              %tr
+                %th= t('active_record.attributes.property.cost_price')
+                %td= number_to_currency property.cost_price
+              %tr
+                %th= t('active_record.attributes.property.sale_price')
+                %td= number_to_currency property.sale_price
+          /= link_to 'Show', property

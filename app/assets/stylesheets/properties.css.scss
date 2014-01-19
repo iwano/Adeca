@@ -27,3 +27,17 @@
     padding-right: 10px;
   }
 }
+
+.cycle-pager{
+  margin-top: 5px;
+  text-align: center;
+  width: 600px;
+  a{
+    display: inline-block;
+  }
+  img{
+    height: 50px !important;
+    margin: 0 1px;
+    width: 50px !important;
+  }
+}

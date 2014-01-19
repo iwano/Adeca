@@ -9,6 +9,6 @@ class Property < ActiveRecord::Base
   end
 
   def master_photo
-    photos.first.photo.thumb
+    photos.first.photo.thumb unless photos.empty?
   end
 end
