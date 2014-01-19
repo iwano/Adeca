@@ -1,26 +1,29 @@
 %p#notice= notice
-%p
-  %strong Property type:
-  = @property.property_type
-%p
-  %strong City:
-  = @property.city
-%p
-  %strong Address:
-  = @property.address
-%p
-  %strong Description
-  = @property.description
-%p
-  %strong Cost price:
-  = @property.cost_price
-%p
-  %strong Sale price:
-  = @property.sale_price
+
+%table.property-properties-table
+  %tbody
+    %tr
+      %th= t('active_record.attributes.property.property_type')
+      %td= @property.property_type
+    %tr
+      %th= t('active_record.attributes.property.city')
+      %td= @property.city
+    %tr
+      %th= t('active_record.attributes.property.address')
+      %td= @property.address
+    %tr
+      %th= t('active_record.attributes.property.description')
+      %td= raw @property.description
+    %tr
+      %th= t('active_record.attributes.property.cost_price')
+      %td= number_to_currency @property.cost_price
+    %tr
+      %th= t('active_record.attributes.property.sale_price')
+      %td= number_to_currency @property.sale_price
 
 .property-photos
   .cycle-slideshow{"data-cycle-pager" => "#pager1", "data-cycle-pager-template" => "<a href=# ><img src='{{children.0.src}}' width=20 height=20></a>", "data-cycle-slides" => ">div", "data-cycle-timeout" => "0", "data-cycle-update-view" => "-1"}
     - @property.photos.each do |photo|
       %div
-        = image_tag photo.photo
+        = image_tag photo.photo.medium
   #pager1.cycle-pager

@@ -6,7 +6,7 @@
   - @properties.each do |property|
     %li
       = link_to image_tag(property.master_photo), property
-      %table.properties-properties-table
+      %table.property-properties-table
         %tbody
           %tr
             %th= t('active_record.attributes.property.property_type')
@@ -19,11 +19,11 @@
             %td= property.address
           %tr
             %th= t('active_record.attributes.property.description')
-            %td= property.description
+            %td= raw property.description
           %tr
             %th= t('active_record.attributes.property.cost_price')
-            %td= property.cost_price
+            %td= number_to_currency property.cost_price
           %tr
             %th= t('active_record.attributes.property.sale_price')
-            %td= property.sale_price
+            %td= number_to_currency property.sale_price
       /= link_to 'Show', property

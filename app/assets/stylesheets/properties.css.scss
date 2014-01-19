@@ -4,12 +4,26 @@
 
 .properties-list{
   list-style-type: none;
-  img{
+  a{
+    border: 1px solid #fff;
     display: inline-block;
     margin-right: 30px;
-    max-width: 200px;
+    vertical-align: top;
+    &:hover{
+      background-color: transparent;
+      border-color: #000;
+      opacity: .7;
+    }
   }
-  .properties-properties-table{
-    display: inline-block;
+}
+
+.property-properties-table{
+  display: inline-block;
+  p{
+    margin: 0;
+  }
+  th{
+    text-align: right;
+    padding-right: 10px;
   }
 }
