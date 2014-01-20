@@ -1,0 +1,25 @@
+@import 'variables';
+
+#hero-container{
+  background: $logo_blue;
+  min-height: 260px;
+  padding-top: 50px;
+  .hero-wrapper{
+    margin: 0 auto;
+    max-width: 630px;
+  }
+  form{
+    background: rgba(0, 0, 0, 0.498039);
+    border-radius: 4px;
+    display: inline-block;
+    padding: 5px;
+    margin-top: 20px;
+  }
+  h1{
+    color: #fff;
+    margin: 0;
+  }
+  input[type='text']{
+    width: 300px;
+  }
+}

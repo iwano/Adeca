@@ -9,9 +9,9 @@
       %a#logo.navbar-brand{href: "../"} Adeca
     %nav.collapse.navbar-collapse.bs-navbar-collapse{role: "navigation"}
       %ul#main-nav.nav.navbar-nav
-        %li
+        %li{class: current_page('properties','index')}
           = link_to t('active_record.models.property', count: 2), properties_path
-        %li
+        %li{class: current_page_with_param('static_pages','index', 'contact_us')}
           = link_to t('contact_us'), static_page_path(static_page: 'contact_us')
-        %li
+        %li{class: current_page_with_param('static_pages','index', 'about_us')}
           = link_to t('services'), static_page_path(static_page: 'about_us')

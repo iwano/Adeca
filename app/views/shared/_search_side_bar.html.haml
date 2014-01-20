@@ -1,7 +1,6 @@
 #search-sidebar.col-md-3
   .search-container
-    %h4= t('search.search_properties')
     = form_tag(properties_path, method: 'get') do
-      = text_field_tag :keyword
+      = text_field_tag :keyword, nil, placeholder: t('search.what_are_you_looking_for')
       %br
       = submit_tag t('search.search_submit')

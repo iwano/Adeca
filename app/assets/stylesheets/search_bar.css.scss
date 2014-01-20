@@ -1,16 +1,28 @@
+@import 'variables';
+
 #search-sidebar{
   min-height: 150px;
 }
 
 .search-container{
-  background-color: #e7e7e7;
+  background-color: darken($logo_blue, 20%);
+  border-radius: 4px;
   display: block;
   padding: 12px;
   width: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  input[type='text']{
+    margin-bottom: 10px;
+    width: 100%;
+  }
+  input[type='submit']{
+    float: right;
+    padding: 6px 20px;
+  }
 }
+
 
 @media (min-width: 992px){
   .search-container {

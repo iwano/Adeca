@@ -1,3 +1,5 @@
+@import 'variables';
+
 html, body, #layout, #layout .row:first-child,  #main{
   min-height: 100%;
 }
@@ -8,6 +10,7 @@ body{
 
 #layout{
   font-family: Shift, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  min-height: 500px;
   padding-top: 20px;
 }
 
@@ -15,44 +18,23 @@ body{
   margin: 40px 0;
 }
 
-#hero-container{
-  background: #006aa6;
-  height: 260px;
-  padding-top: 50px;
-  .hero-wrapper{
-    margin: 0 auto;
-    max-width: 630px;
-  }
-  form{
-    background: rgba(0, 0, 0, 0.498039);
-    border-radius: 4px;
-    display: inline-block;
-    padding: 5px;
-    margin-top: 20px;
-  }
-  h1{
-    color: #fff;
-    margin: 0;
-  }
-  input{
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 300;
-    height: 40px;
-  }
-  input[type='text']{
-    padding: 0 15px;
-    width: 300px;
-  }
-  input[type='submit']{
-    background: #2EB237;
-    color: white;
-    font-weight: 500;
-    height: 41px;
-    &:hover{
-      background: darken(#2EB237, 20%);
-      color: darken(#fff, 20%);
-    }
+input{
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 300;
+  height: 40px;
+}
+input[type='text']{
+  padding: 0 15px;
+}
+input[type='submit']{
+  background: $logo_green;
+  color: white;
+  font-weight: 500;
+  height: 41px;
+  &:hover{
+    background: darken($logo_green, 20%);
+    color: darken(#fff, 20%);
   }
 }
