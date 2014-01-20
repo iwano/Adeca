@@ -1,0 +1,6 @@
+%section#hero-container
+  .hero-wrapper
+    %h1= t('slogan')
+    = form_tag(properties_path, method: 'get') do
+      = text_field_tag :keyword, nil, placeholder: t('search.what_are_you_looking_for')
+      = submit_tag t('search.search_submit')

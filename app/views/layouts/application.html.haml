@@ -8,9 +8,7 @@
     %meta{content: "width=device-width, initial-scale=1.0", name: "viewport"}/
   %body
     = render 'layouts/header'
+    = render 'shared/hero_container' if current_page?(root_path)
     #layout.container
-      .row
-        = render 'shared/search_side_bar'
-        #main.col-md-9
-          = yield
+      = yield
     = render 'layouts/footer'

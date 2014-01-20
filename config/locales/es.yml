@@ -2,7 +2,9 @@ es:
   about_us: Acerca de nosotros
   active_record:
     models:
-      property: Propiedad
+      property:
+        one: Propiedad
+        other: Propiedades
     attributes:
       property:
         property_type: Tipo de Propiedad
@@ -149,3 +151,5 @@ es:
   search:
     search_properties: Buscar Propiedades
     search_submit: Buscar
+    what_are_you_looking_for: ¿Qué estas buscando?
+  slogan: Compra Casas y Terrenos en Colima
