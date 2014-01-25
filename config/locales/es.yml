@@ -2,17 +2,29 @@ es:
   about_us: Acerca de nosotros
   active_record:
     models:
+      admin:
+        one: Administrador
+        other: Administradores
       property:
         one: Propiedad
         other: Propiedades
+      photo:
+        one: Foto
+        other: Fotos
     attributes:
+      admin:
+        email: Email
+        password: Contraseña
+        password_confirmation: Confirmación de contraseña
+      photo:
+        photo: Foto
       property:
         property_type: Tipo de Propiedad
         city: Ciudad
         address: Dirección
-        cost_price: Costo
-        sale_price: Costo de venta
+        sale_price: Costo
         description: Descripción
+        photos: Fotos de la propiedad
   admin:
     home:
       name: Inicio
@@ -146,6 +158,7 @@ es:
     index:
       listing_properties: Listado de Propiedades
       search_results_for: '%{count} resultado(s) para "%{keyword}"'
+  property_help: Llena todos los datos de la propiedad y recuerda que puedes agregar muchas imágenes
   services: Servicios
   title: Adeca
   search:
