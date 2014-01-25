@@ -11,4 +11,8 @@ class Property < ActiveRecord::Base
   def master_photo
     photos.first.photo.thumb unless photos.empty?
   end
+
+  def property_type_enum
+    [['Venta', 'venta'], ['Renta', 'renta'], ['Preventa','preventa']]
+  end
 end
