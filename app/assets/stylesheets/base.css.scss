@@ -40,14 +40,13 @@ input[type='submit']{
 
 #location-gmap {
   height: 0;
-  margin-bottom: 30px;
-  padding-bottom: 32%; /* 16:9 */
+  padding-bottom: 400px;
   position: relative;
   width: 100%;
   iframe {
     height: 100%;
     left: 0;
-    max-height: 360px;
+    max-height: 400px;
     position: absolute;
     top: 0;
     width: 100%;
