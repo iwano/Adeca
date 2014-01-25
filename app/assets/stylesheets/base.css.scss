@@ -1,7 +1,7 @@
 @import 'variables';
 
-html, body, #layout, #layout .row:first-child,  #main{
-  min-height: 100%;
+html, body, #layout{
+  height: 100%;
 }
 
 body{
@@ -10,7 +10,6 @@ body{
 
 #layout{
   font-family: Shift, 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  min-height: 500px;
   padding-top: 20px;
 }
 
@@ -36,5 +35,21 @@ input[type='submit']{
   &:hover{
     background: darken($logo_green, 20%);
     color: darken(#fff, 20%);
+  }
+}
+
+#location-gmap {
+  height: 0;
+  margin-bottom: 30px;
+  padding-bottom: 32%; /* 16:9 */
+  position: relative;
+  width: 100%;
+  iframe {
+    height: 100%;
+    left: 0;
+    max-height: 360px;
+    position: absolute;
+    top: 0;
+    width: 100%;
   }
 }

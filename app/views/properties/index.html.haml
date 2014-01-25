@@ -21,12 +21,6 @@
                 %th= t('active_record.attributes.property.address')
                 %td= property.address
               %tr
-                %th= t('active_record.attributes.property.description')
-                %td= raw property.description
-              %tr
-                %th= t('active_record.attributes.property.cost_price')
-                %td= number_to_currency property.cost_price
-              %tr
                 %th= t('active_record.attributes.property.sale_price')
                 %td= number_to_currency property.sale_price
           /= link_to 'Show', property

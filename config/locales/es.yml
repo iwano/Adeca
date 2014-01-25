@@ -19,7 +19,7 @@ es:
       photo:
         photo: Foto
       property:
-        property_type: Tipo de Propiedad
+        property_type: Tipo
         city: Ciudad
         address: Dirección
         sale_price: Costo
@@ -165,4 +165,4 @@ es:
     search_properties: Buscar Propiedades
     search_submit: Buscar
     what_are_you_looking_for: ¿Qué estas buscando?
-  slogan: Compra Casas y Terrenos en Colima
+  slogan: Venta de Casas y Terrenos

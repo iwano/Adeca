@@ -13,6 +13,6 @@ class Property < ActiveRecord::Base
   end
 
   def property_type_enum
-    [['Venta', 'venta'], ['Renta', 'renta'], ['Preventa','preventa']]
+    ['Venta', 'Renta', 'Preventa']
   end
 end
