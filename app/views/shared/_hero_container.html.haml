@@ -4,3 +4,4 @@
     = form_tag(properties_path, method: 'get') do
       = text_field_tag :keyword, nil, placeholder: t('search.what_are_you_looking_for')
       = submit_tag t('search.search_submit')
+    .fb-like{"data-action" => "like", "data-href" => "https://www.facebook.com/ADECA.INMO.VENTAS?ref=profile", "data-layout" => "box_count", "data-share" => "true", "data-show-faces" => "true"}

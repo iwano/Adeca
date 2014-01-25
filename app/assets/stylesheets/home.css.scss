@@ -3,6 +3,7 @@
 #hero-container{
   background: $logo_blue;
   min-height: 260px;
+  overflow: hidden;
   padding-top: 50px;
   .hero-wrapper{
     margin: 0 auto;
@@ -21,5 +22,11 @@
   }
   input[type='text']{
     width: 300px;
+  }
+  .fb-like{
+    float: right;
+    padding: 5px;
+    background: white;
+    border-radius: 3px;
   }
 }

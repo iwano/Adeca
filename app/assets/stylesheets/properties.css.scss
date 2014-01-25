@@ -4,6 +4,7 @@
 
 .properties-list{
   list-style-type: none;
+  padding: 0;
   a{
     border: 1px solid #fff;
     display: inline-block;
@@ -13,6 +14,13 @@
       background-color: transparent;
       border-color: #000;
       opacity: .7;
+    }
+  }
+  li{
+    border-top: 1px solid #ccc;
+    padding: 12px;
+    &:hover{
+      background: #ccc;
     }
   }
 }
